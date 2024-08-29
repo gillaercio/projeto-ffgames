@@ -54,17 +54,15 @@ body {
     font-family: var(--font-titulo);
     letter-spacing: 8px;
     font-size: 3em;
-    padding-left: 15px;
     text-transform: uppercase;
     margin-bottom: 80px;
 }
 
 .info .description {
-    width: 45%;
+    width: 50%;
     line-height: 20px;
     height: 350px;
     overflow: auto;
-    padding: 15px;
 }
 
 .info .description span {
