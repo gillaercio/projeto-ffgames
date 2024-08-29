@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Final Fantasy";
+    src: url(../_fonts/finalf.ttf);
+}
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-titulo: "Final Fantasy", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
+    text-align: justify;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.info {
+    display: none;
+}
+
+.info.active {
+    display: block;
+}
+
+.content {
+    color: #ffffff;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.info h1 {
+    font-family: var(--font-titulo);
+    letter-spacing: 8px;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.info .description {
+    width: 50%;
+    line-height: 20px;
+    height: 350px;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+.info .description span {
+    margin-top: 10px;
+    font-weight: bolder;
+    display: flex;
+}
+
+.info .description ul {
+    padding-left: 10px;
+}
+
+.buttons-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons-carousel .button {
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+.buttons-carousel .button.active {
+    background-color: green;
+}
+
+.image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.image.active {
+    display: block;
+    animation: changeImage 0.7s;
+}
+
+/* EFEITO DE FADE */
+@keyframes changeImage {
+    from {
+        opacity: 0.85s;
+    }
+    to {
+        opacity: 1s;
+    }
+}
+
+/* EFEITO DE FILTRO */
+main:after {
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(120deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.05926120448179273) 50%, rgba(0,0,0,1) 90%);
+    z-index: -1;
+}
