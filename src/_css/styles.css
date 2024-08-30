@@ -23,6 +23,7 @@ body {
     text-align: justify;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .carousel {
@@ -78,13 +79,13 @@ body {
 .buttons-carousel {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .buttons-carousel .button {
     background-color: #ffffff;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: 2px solid transparent;
     border-color: #ffffff;
