@@ -76,13 +76,13 @@ body {
     padding-left: 15px;
 }
 
-.buttons-carousel {
+.carousel-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.buttons-carousel .button {
+.carousel-buttons .button {
     background-color: #ffffff;
     width: 10px;
     height: 10px;
@@ -92,7 +92,7 @@ body {
     cursor: pointer;
 }
 
-.buttons-carousel .button.selected {
+.carousel-buttons .button.selected {
     background-color: green;
 }
 
