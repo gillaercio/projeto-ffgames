@@ -92,7 +92,7 @@ body {
     cursor: pointer;
 }
 
-.buttons-carousel .button.active {
+.buttons-carousel .button.selected {
     background-color: green;
 }
 
