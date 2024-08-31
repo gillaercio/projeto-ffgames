@@ -45,6 +45,7 @@ body {
 .content {
     color: #ffffff;
     font-size: 0.8em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -84,8 +85,8 @@ body {
 
 .carousel-buttons .button {
     background-color: #ffffff;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 2px solid transparent;
     border-color: #ffffff;
@@ -108,7 +109,6 @@ body {
     animation: changeImage 0.7s;
 }
 
-/* EFEITO DE FADE */
 @keyframes changeImage {
     from {
         opacity: 0.85s;
@@ -118,7 +118,6 @@ body {
     }
 }
 
-/* EFEITO DE FILTRO */
 main:after {
     content: "";
     min-height: 100vh;
