@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@font-face {
+/* @font-face {
   font-family: "Final Fantasy";
   src: url(../_fonts/finalf.ttf);
-}
+} */
 
 :root {
   --font-padrao: Arial, Helvetica, sans-serif;
